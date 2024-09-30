@@ -11,7 +11,8 @@ linter:
     - lines_longer_than_80_chars
     - prefer_single_quotes
     - require_trailing_commas
-
+  
+dart_code_linter:
   exclude:
     - test/resources/*
     - test/resources/unused_files_analyzer/**
@@ -30,8 +31,6 @@ linter:
     strict-raw-types: true
   plugins:
     - dart_code_linter
-
-dart_code_linter:
   anti-patterns:
     - long-method
     - long-parameter-list
@@ -63,3 +62,7 @@ dart_code_linter:
     - test/src/utils/**
     - test/resources/*
     - test/*
+    - "**/*.g.dart"
+    - "**.freezed.dart"
+    - "build/**"
+    - "lib/generated/**"
